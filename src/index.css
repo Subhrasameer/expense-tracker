@@ -1,0 +1,65 @@
+/* index.css */
+
+/* Add your global styles here */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.hero-section .text {
+  max-width: 50%;
+}
+
+.hero-section .image {
+  max-width: 50%;
+}
+
+.add-expense-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.add-expense-form input,
+.add-expense-form select,
+.add-expense-form button {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.expense-list {
+  margin: 20px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.total-expense {
+  font-weight: bold;
+  margin-top: 20px;
+}

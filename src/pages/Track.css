@@ -1,0 +1,95 @@
+/* Track.css */
+
+/* General container styling */
+.track-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.add-expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-expense-form input,
+.add-expense-form select,
+.add-expense-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-expense-form button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-expense-form button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.add-expense-form button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+/* Expense list styling */
+.expense-list {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.expense-item .expense-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-item .expense-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.expense-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.expense-item .edit-button {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.expense-item .delete-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.expense-item button:hover {
+    opacity: 0.8;
+}
+
+/* Total expense styling */
+.total-expense {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+}

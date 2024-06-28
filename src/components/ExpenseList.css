@@ -1,0 +1,45 @@
+/* ExpenseList.css */
+.expense-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-item div {
+    margin: 0 10px;
+}
+
+.total-expense {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

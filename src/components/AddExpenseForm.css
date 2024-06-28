@@ -1,0 +1,48 @@
+/* AddExpenseForm.css */
+
+.add-expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-form input,
+.add-expense-form select,
+.add-expense-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-expense-form input:focus,
+.add-expense-form select:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.add-expense-form button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.add-expense-form button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.add-expense-form button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.add-expense-form input::placeholder {
+    color: #bbb;
+}

@@ -1,0 +1,68 @@
+/* ExpenseList.css */
+
+/* Container for the entire expense list */
+.expense-list {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each expense item */
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.expense-item>div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Button styling */
+.expense-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.expense-item button:hover {
+    opacity: 0.8;
+}
+
+.expense-item button:focus {
+    outline: none;
+}
+
+/* Specific button colors */
+.expense-item button:first-of-type {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.expense-item button:last-of-type {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Styling for the total expense section */
+.total-expense {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
